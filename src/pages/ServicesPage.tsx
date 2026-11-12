@@ -100,7 +100,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onNavigate, onTrigge
   const handleLaunchQuote = () => {
     const briefText = `Hello Claudius Light,\n\nI would like to inquire about: ${activeServiceObj.title}\nTimeline Needed: ${getEstimatedTimeline()}\nUrgency: ${urgency}\n\nPlease share your availability and quote.`;
     const encoded = encodeURIComponent(briefText);
-    window.open(`${PERSONAL_INFO.whatsappUrl}?text=${encoded}`, '_blank');
+    window.location.href = `${PERSONAL_INFO.whatsappUrl}?text=${encoded}`;
   };
 
   return (

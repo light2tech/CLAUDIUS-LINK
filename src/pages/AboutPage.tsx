@@ -55,9 +55,9 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenCv, onNavigate }) =>
           <div className="lg:col-span-5 relative flex justify-center">
             <div className="relative w-full max-w-sm sm:max-w-md aspect-[4/5] flex items-end justify-center">
               
-              {/* Red geometric angled polygon background */}
+              {/* Red geometric angled polygon background (Reduced density) */}
               <div 
-                className="absolute right-0 top-10 bottom-0 w-4/5 bg-red-600 rounded-3xl -z-10 shadow-2xl shadow-red-600/30"
+                className="absolute right-0 top-10 bottom-0 w-4/5 bg-gradient-to-br from-red-600/75 via-red-500/70 to-red-600/65 rounded-3xl -z-10 shadow-xl shadow-red-600/15 backdrop-blur-xs"
                 style={{
                   clipPath: 'polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%)',
                 }}

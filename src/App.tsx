@@ -47,6 +47,20 @@ export default function App() {
   const [isJambOpen, setIsJambOpen] = useState(false);
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
+  const isAnyModalOpen = isCvOpen || isCbtOpen || isWasteOpen || isGraphicsOpen || isJambOpen || selectedProject !== null;
+
+  // Prevent background scroll when modal is active
+  useEffect(() => {
+    if (isAnyModalOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [isAnyModalOpen]);
+
   // Sync theme with dark class
   useEffect(() => {
     if (darkMode) {

@@ -1,5 +1,5 @@
 import React from 'react';
-import { ExternalLink, Check, ArrowRight } from 'lucide-react';
+import { Check, ArrowRight } from 'lucide-react';
 import { PERSONAL_INFO } from '../data/portfolioData';
 
 export const ComparisonSection: React.FC = () => {
@@ -71,17 +71,11 @@ export const ComparisonSection: React.FC = () => {
 
           {/* Links Footer */}
           <div className="p-6 sm:p-8 bg-neutral-100/70 dark:bg-neutral-900/70 border-t border-neutral-200 dark:border-neutral-800 flex flex-col sm:flex-row items-center justify-between gap-5 text-sm">
-            <div className="flex items-center gap-3">
-              <span className="text-neutral-500 font-medium">Compare with original deployment:</span>
-              <a
-                href={PERSONAL_INFO.currentPortfolioUrl}
-                target="_blank"
-                rel="noreferrer"
-                className="font-mono text-neutral-900 dark:text-white hover:text-red-600 flex items-center gap-1.5 underline font-bold"
-              >
-                <span>my-web-portfolio-silk.vercel.app</span>
-                <ExternalLink className="w-4 h-4" />
-              </a>
+            <div className="flex flex-wrap items-center gap-3">
+              <span className="text-neutral-500 font-medium">Evolution Milestone:</span>
+              <span className="font-mono text-xs sm:text-sm text-neutral-900 dark:text-white font-bold bg-white dark:bg-neutral-800 px-3.5 py-1.5 rounded-full border border-neutral-200 dark:border-neutral-700">
+                Legacy V1 Static Baseline → Modern Multi-Page Architecture V2
+              </span>
             </div>
 
             <a

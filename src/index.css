@@ -16,8 +16,14 @@
   }
 
   html {
-    font-size: 16.5px;
+    font-size: 17.5px;
     letter-spacing: -0.01em;
+  }
+
+  @media (min-width: 640px) {
+    html {
+      font-size: 18.5px;
+    }
   }
 
   body {

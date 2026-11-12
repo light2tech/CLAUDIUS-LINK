@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ArrowRight, Mail, Globe, Github, MessageSquare, ArrowDown, Check, MapPin } from 'lucide-react';
+import { ArrowRight, Mail, Github, MessageSquare, ArrowDown, Check, MapPin } from 'lucide-react';
 import { PERSONAL_INFO } from '../data/portfolioData';
 
 interface HeroProps {
@@ -190,16 +190,6 @@ export const Hero: React.FC<HeroProps> = ({ onOpenCv, onNavigate }) => {
                   title="GitHub @light2tech"
                 >
                   <Github className="w-4.5 h-4.5" />
-                </a>
-
-                <a
-                  href={PERSONAL_INFO.currentPortfolioUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="w-10 h-10 rounded-full border border-neutral-300 dark:border-neutral-700 flex items-center justify-center hover:text-white hover:bg-red-600 hover:border-red-600 transition-all duration-300 shadow-xs"
-                  title="Live Vercel Portfolio"
-                >
-                  <Globe className="w-4.5 h-4.5" />
                 </a>
 
                 <a

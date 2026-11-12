@@ -12,7 +12,7 @@ export const PERSONAL_INFO = {
   location: 'Jalingo, Taraba State, Nigeria',
   githubUrl: 'https://github.com/light2tech',
   githubRepoUrl: 'https://github.com/light2tech/my-web-portfolio',
-  currentPortfolioUrl: 'https://my-web-portfolio-silk.vercel.app',
+  currentPortfolioUrl: '',
   cvPdfPath: '/assets/aistudio/pdf_Claudius_Ngenge_Professional_CV_cbb7617b.pdf',
   bio: 'Creative and adaptable digital professional with approximately two years of hands-on experience across graphic design, front-end web design, and digital media support. Proficient with HTML, CSS, and modern JavaScript for responsive web interfaces, and Canva for impactful visual communication. Passionate about empowering organizations, fellowship groups, and students through accessible digital solutions.',
   profileImage: '/assets/aistudio/Young_Man_in_JESUS_Hoodie_Cutout_3462f98e.png',
@@ -128,7 +128,6 @@ export const PROJECTS: Project[] = [
     tags: ['Web Design', 'HTML/CSS/JS', 'Responsive', 'GitHub'],
     description: 'A personal portfolio website demonstrating hands-on mastery of web technologies, clean component architecture, and responsive UX presentation.',
     image: '/src/assets/images/project_puls_cbt_1794391136770.jpg',
-    liveUrl: 'https://my-web-portfolio-silk.vercel.app',
     githubUrl: 'https://github.com/light2tech/my-web-portfolio',
     stats: [
       { label: 'Original Version', value: 'Vercel Deployed' },
@@ -196,7 +195,8 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
     discipline: 'Creative Direction',
     summary: 'Crafting visually arresting promotional materials, conference banners, and social collateral that communicate messages with clarity.',
     skills: [
-      { name: 'Canva Pro Design Suite', level: 'Advanced', description: 'Multi-layer compositions, typography pairing, brand consistency, and asset preparation.' },
+      { name: 'Canva Pro Design Suite', level: 'Advanced (70%)', description: 'Multi-layer compositions, typography pairing, brand consistency, and asset preparation.' },
+      { name: 'Adobe Photoshop', level: 'Core (40%)', description: 'Photo retouching, layer adjustments, cutting out subjects, and raster graphic manipulation.' },
       { name: 'Event Flyers & Posters', level: 'Advanced', description: 'High-contrast event announcements, youth rallies, seminars, and church conferences.' },
       { name: 'Roll-Up Banners & Stage Backdrops', level: 'Proficient', description: 'Large-scale print asset layout, CMYK color spaces, and readable display hierarchy.' },
       { name: 'Certificates of Recognition', level: 'Proficient', description: 'Formal academic, fellowship, and achievement certificate designs with elegant borders.' },

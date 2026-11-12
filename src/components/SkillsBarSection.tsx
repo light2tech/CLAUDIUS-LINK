@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Code, Palette, Cpu, Radio } from 'lucide-react';
+import { ArrowRight, Code, Palette, Cpu, Radio, Layers } from 'lucide-react';
 
 interface SkillsBarSectionProps {
   onOpenCv: () => void;
@@ -12,7 +12,7 @@ export const SkillsBarSection: React.FC<SkillsBarSectionProps> = ({ onOpenCv, on
       id: 'html-css',
       title: 'HTML & CSS',
       subtitle: 'Web Development & UI',
-      percentage: '90%',
+      percentage: '60%',
       icon: Code,
       badgeColor: 'bg-red-50 dark:bg-red-950/40 text-red-600',
     },
@@ -20,7 +20,7 @@ export const SkillsBarSection: React.FC<SkillsBarSectionProps> = ({ onOpenCv, on
       id: 'canva',
       title: 'Canva Pro',
       subtitle: 'Graphic & Print Design',
-      percentage: '95%',
+      percentage: '70%',
       icon: Palette,
       badgeColor: 'bg-neutral-100 dark:bg-neutral-800 text-neutral-900 dark:text-white',
     },
@@ -28,7 +28,7 @@ export const SkillsBarSection: React.FC<SkillsBarSectionProps> = ({ onOpenCv, on
       id: 'js',
       title: 'JavaScript',
       subtitle: 'Interactivity & Logic',
-      percentage: '85%',
+      percentage: '55%',
       icon: Cpu,
       badgeColor: 'bg-red-50 dark:bg-red-950/40 text-red-600',
     },
@@ -36,9 +36,17 @@ export const SkillsBarSection: React.FC<SkillsBarSectionProps> = ({ onOpenCv, on
       id: 'media',
       title: 'Digital Media & IT',
       subtitle: 'Live Streaming & Portals',
-      percentage: '90%',
+      percentage: '70%',
       icon: Radio,
       badgeColor: 'bg-neutral-100 dark:bg-neutral-800 text-neutral-900 dark:text-white',
+    },
+    {
+      id: 'photoshop',
+      title: 'Adobe Photoshop',
+      subtitle: 'Photo & Graphic Editing',
+      percentage: '40%',
+      icon: Layers,
+      badgeColor: 'bg-blue-50 dark:bg-blue-950/40 text-blue-600 dark:text-blue-400',
     },
   ];
 
@@ -73,8 +81,8 @@ export const SkillsBarSection: React.FC<SkillsBarSectionProps> = ({ onOpenCv, on
             </div>
           </div>
 
-          {/* Right Column: 4 Skill Cards with Progress Bars (Enlarged and Polished) */}
-          <div className="lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-5">
+          {/* Right Column: 5 Skill Cards with Progress Bars (Enlarged and Polished) */}
+          <div className="lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-4">
             {skillCards.map((card) => {
               const Icon = card.icon;
               return (

@@ -58,7 +58,7 @@ export const Navbar: React.FC<NavbarProps> = ({
         </button>
 
         {/* Center: Multi-Page Navigation Links */}
-        <nav className="hidden md:flex items-center gap-8 lg:gap-9 text-[15.5px] font-medium text-neutral-700 dark:text-neutral-300">
+        <nav className="hidden md:flex items-center gap-7 lg:gap-9 text-base lg:text-[17px] font-semibold text-neutral-700 dark:text-neutral-300">
           {navLinks.map((link) => {
             const isActive = currentPage === link.id;
             return (

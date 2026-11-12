@@ -16,8 +16,7 @@ export const CvViewerModal: React.FC<CvViewerModalProps> = ({ isOpen, onClose })
     const text = `
 ${PERSONAL_INFO.fullName}
 ${PERSONAL_INFO.preferredTitle} | ${PERSONAL_INFO.secondaryTitle}
-Nigeria | Phone: ${PERSONAL_INFO.phone} | Email: ${PERSONAL_INFO.email}
-Portfolio: ${PERSONAL_INFO.currentPortfolioUrl} | GitHub: ${PERSONAL_INFO.githubUrl}
+Email: ${PERSONAL_INFO.email} | Phone: ${PERSONAL_INFO.phone} | GitHub: ${PERSONAL_INFO.githubUrl}
 
 PROFESSIONAL PROFILE:
 ${PERSONAL_INFO.bio}
@@ -34,7 +33,7 @@ EDUCATION:
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-5 bg-neutral-950/85 backdrop-blur-md animate-in fade-in duration-200">
-      <div className="relative w-full max-w-5xl bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 shadow-2xl flex flex-col h-[92vh] overflow-hidden">
+      <div className="relative w-full max-w-5xl bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 shadow-2xl rounded-2xl sm:rounded-3xl flex flex-col h-[92vh] overflow-hidden">
         
         {/* Header Bar */}
         <div className="flex items-center justify-between px-6 py-4 border-b border-neutral-200 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-950 shrink-0">

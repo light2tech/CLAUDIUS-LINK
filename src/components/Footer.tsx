@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowUp, Github, Globe, Mail, MessageSquare } from 'lucide-react';
+import { ArrowUp, Github, Mail, MessageSquare } from 'lucide-react';
 import { PERSONAL_INFO } from '../data/portfolioData';
 
 interface FooterProps {
@@ -80,16 +80,6 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, currentPage }) => {
               title="GitHub"
             >
               <Github className="w-4 h-4" />
-            </a>
-
-            <a
-              href={PERSONAL_INFO.currentPortfolioUrl}
-              target="_blank"
-              rel="noreferrer"
-              className="w-9 h-9 rounded-full border border-neutral-300 dark:border-neutral-700 flex items-center justify-center hover:text-white hover:bg-red-600 hover:border-red-600 transition-all duration-300 shadow-2xs"
-              title="Portfolio Live"
-            >
-              <Globe className="w-4 h-4" />
             </a>
 
             <a
