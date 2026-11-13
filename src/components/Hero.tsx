@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ArrowRight, Mail, Github, MessageSquare, ArrowDown, Check, MapPin } from 'lucide-react';
+import { ArrowRight, Mail, Github, MessageSquare, ArrowDown, Check } from 'lucide-react';
 import { PERSONAL_INFO } from '../data/portfolioData';
 
 interface HeroProps {
@@ -117,17 +117,12 @@ export const Hero: React.FC<HeroProps> = ({ onOpenCv, onNavigate }) => {
           {/* Left Column: Typographic Details */}
           <div className="lg:col-span-6 space-y-7 z-10">
             
-            {/* Greeting Tag & Location Pill */}
+            {/* Greeting Tag */}
             <div className="flex flex-wrap items-center gap-3">
               <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-bold tracking-wider uppercase bg-red-50 dark:bg-red-950/40 text-red-600 dark:text-red-400 border border-red-200/60 dark:border-red-900/40">
                 <span className="w-2 h-2 rounded-full bg-red-600 animate-pulse" />
                 <span>HELLO, I'M</span>
               </span>
-
-              <div className="flex items-center gap-1.5 text-xs font-semibold text-neutral-500 dark:text-neutral-400">
-                <MapPin className="w-3.5 h-3.5 text-red-600" />
-                <span>Taraba State, Nigeria</span>
-              </div>
             </div>
 
             {/* Main Heading: Claudius Light with Typewriter Feature */}
