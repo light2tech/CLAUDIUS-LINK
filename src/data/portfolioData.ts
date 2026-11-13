@@ -1,4 +1,7 @@
 import { ExperienceItem, Project, SkillCategory } from '../types';
+import pulsCbtImg from '../assets/images/project_puls_cbt_1794391136770.jpg';
+import smartWasteImg from '../assets/images/project_smart_waste_1794391137502.jpg';
+import campusPortalImg from '../assets/images/project_campus_portal_1794391137357.jpg';
 
 export const PERSONAL_INFO = {
   fullName: 'Claudius Light',
@@ -35,7 +38,7 @@ export const PROJECTS: Project[] = [
     role: 'Front-End UI/UX Concept & Prototype',
     tags: ['Interactive CBT', 'EdTech', 'HTML/CSS/JS', 'Simulation'],
     description: 'An education-focused platform concept and interactive mock testing interface designed to help Nigerian students practice computer-based tests for JAMB UTME, Post-UTME, and SSCE with real-time timers and instant scoring.',
-    image: '/src/assets/images/project_puls_cbt_1794391136770.jpg',
+    image: pulsCbtImg,
     hasInteractiveDemo: true,
     demoType: 'cbt',
     stats: [
@@ -65,7 +68,7 @@ export const PROJECTS: Project[] = [
     role: 'Product Concept & UI Design',
     tags: ['Civic Tech', 'Sustainability', 'Dashboard UI', 'Tracking'],
     description: 'A technology concept focused on supporting urban waste pickup requests, collection truck tracking, and eco-recycling metrics for Nigerian municipal communities and university campuses.',
-    image: '/src/assets/images/project_smart_waste_1794391137502.jpg',
+    image: smartWasteImg,
     hasInteractiveDemo: true,
     demoType: 'waste',
     stats: [
@@ -127,7 +130,7 @@ export const PROJECTS: Project[] = [
     role: 'Full Lifecycle Front-End Developer',
     tags: ['Web Design', 'HTML/CSS/JS', 'Responsive', 'GitHub'],
     description: 'A personal portfolio website demonstrating hands-on mastery of web technologies, clean component architecture, and responsive UX presentation.',
-    image: '/src/assets/images/project_puls_cbt_1794391136770.jpg',
+    image: pulsCbtImg,
     githubUrl: 'https://github.com/light2tech/my-web-portfolio',
     stats: [
       { label: 'Original Version', value: 'Vercel Deployed' },
@@ -155,7 +158,7 @@ export const PROJECTS: Project[] = [
     role: 'Technical Advisor & System Guide',
     tags: ['JAMB UTME', 'Portal Troubleshooting', 'Student Support', 'Admissions'],
     description: 'An interactive student guide and verification diagnostic tool designed to assist incoming Taraba State University students with JAMB profile creation, O’Level uploads, and portal registrations.',
-    image: '/src/assets/images/project_campus_portal_1794391137357.jpg',
+    image: campusPortalImg,
     hasInteractiveDemo: true,
     demoType: 'jamb',
     stats: [
